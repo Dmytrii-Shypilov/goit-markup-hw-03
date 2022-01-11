@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --main-text-color: #757575;
     --secondary-text-color: #212121;
@@ -14,11 +20,35 @@ body {
                 "Droid Sans", "Helvetica Neue", sans-serif;
     color: var(--main-text-color);
     background-color: var(--background-primary);
+    
 }
+img {
+    display: block;
+}
+.section {
+    width: 1600px;
+}
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
 
-/*----Removed list markers----*/
+   
+   
+
+}
+/*----List adjustments----*/
 .list {
     list-style-type: none;
+
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+   
 }
 
 /*----Logo styles----*/
@@ -29,6 +59,12 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-bottom: 25px;
+    padding-top: 24px;
+    display: inline-block;
+    
+    margin-left: 215px;
+    margin-right: 93px;
 }
 .logo .logo-web {
     color: var(--active-color);
@@ -56,6 +92,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
+
 }
 .section-element {
     color: var(--secondary-text-color);
@@ -72,6 +109,9 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+}
+.features .section-heading {
+    display: none;
 }
 .features .section-element {
     text-transform: uppercase;
@@ -91,14 +131,21 @@ body {
     line-height: 1.71;
 }
 /*---- Hero Section blocks of rules ----*/
+.section.hero {
+    text-align: center;
+    width: 1600px;
+    height: 600px;
+    
+  
+}
 .hero-heading {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
     color: var(--background-primary);
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0;
 }
 .hero-button {
     background-color: var(--active-color);
@@ -125,6 +172,8 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+
+    padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -140,6 +189,10 @@ body {
     line-height: 1.14;
     text-decoration: none;
     letter-spacing: 0.02em;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .navigation .link.current-page {
     color: var(--active-color);
@@ -152,6 +205,10 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--main-text-color);
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .footer .link {
     font-style: normal;
@@ -171,3 +228,105 @@ body {
     color: var(--active-color);
 }
 
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 1600px;
+   
+}
+.nav-container {
+    display: flex;
+}
+.list.navigation {
+    display: flex;
+    margin-right: 331px;
+}
+.list.header-contacts {
+    display: flex;
+    margin-right: 215px;
+}
+
+.list.navigation li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.list.header-contacts li+li {
+    margin-left: 50px;
+}
+
+.section.features .list {
+    display: flex;
+}
+
+.features .list li {
+    width: 270px;
+
+}
+.features .list li:not(:last-child) {
+    margin-right: 30px;
+}
+.section.business .list {
+    display: flex;
+}
+
+.features .container,
+ .our-team .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.business .list li:not(:last-child) {
+    margin-right: 30px;
+}
+.section.our-team .list {
+    display: flex;
+    text-align: center;
+}
+.our-team .list li:not(:last-child) {
+    margin-right: 30px;
+}
+.footer {
+    width: 1600px;
+}
+.footer .list {
+    margin-left: 215px;
+    padding-bottom: 60px;
+}
+.footer .logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin-right: 0;
+}
+footer .list li {
+    height: 21px;
+}
+footer .list li+li {
+    margin-top: 9px;
+}
+
+.portfolio .section-heading {
+    display: none;
+}
+.portfolio .filter {
+    display: flex;
+    margin-left: 280px;
+   
+ 
+    margin-bottom: 34px;
+}
+.portfolio .filter li:not(:last-child) {
+    margin-right: 8px;
+}
+.portfolio .works {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.works li {
+    margin-bottom: 30px;
+}
+.works li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
