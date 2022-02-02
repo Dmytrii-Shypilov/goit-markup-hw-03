@@ -23,7 +23,7 @@ body {
                 "Droid Sans", "Helvetica Neue", sans-serif;
     color: var(--main-text-color);
     background-color: var(--background-primary);
-    width: 1600px;
+    max-width: 1600px;
 }
 
 /*---Reseting the margins----*/
