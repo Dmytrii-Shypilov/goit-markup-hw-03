@@ -298,8 +298,8 @@ img {
     display: flex;
 }
 .section.business {
-    padding-top: 28px;
-    padding-bottom: 66px;
+    padding-top: 0px;
+    padding-bottom: 94px;
 }
 .business .list li:not(:last-child) {
     margin-right: 30px;
@@ -314,23 +314,28 @@ img {
     margin-right: 30px;
 }
 .our-team .section-element {
-    margin-top: 30px;
     margin-bottom: 10px;
 }
-.our-team .text {
-    margin-bottom: 30px;
+
+.member-describe {
+    background-color: #ffffff;
+    height: 108px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
 /*----Footer Elements positioning and styles----*/
 .footer .logo {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
     margin-right: 0;
+    margin-bottom: 20px;
     
 }
-.footer .container {
-    padding-top: 40px;
+.footer {
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .footer .list li+li {
@@ -343,8 +348,8 @@ img {
 }
 .portfolio .filter {
     display: flex;
-    margin-left: 280px;
-    margin-bottom: 34px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 .portfolio .filter li:not(:last-child) {
     margin-right: 8px;
